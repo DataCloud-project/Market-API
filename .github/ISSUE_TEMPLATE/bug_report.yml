@@ -40,9 +40,9 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: Please tell us about your environment. Include any relevant information on how you are running R-MARKET_NodeJs_Server.
+      description: Please tell us about your environment. Include any relevant information on how you are running Market-API.
       value: |
-          - R-MARKET_NodeJs_Server version:
+          - Market-API version:
           - Platform/OS:
           - Browser:
           - Other:
