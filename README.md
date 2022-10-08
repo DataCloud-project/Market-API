@@ -4,5 +4,15 @@
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-# Market-API
-Allow offchain order sharing. 
+## Market-API
+Allow offchain order sharing.
+
+## watcher
+
+Watch events emitted by iexec smart contracts and update market database
+
+## Run with docker
+
+```
+INFURA_PROJECT_ID=XXX docker-compose up -d
+```

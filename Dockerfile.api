@@ -1,0 +1,14 @@
+FROM node:14.17-alpine
+
+RUN mkdir -p /app
+WORKDIR /app
+
+RUN apk update && apk upgrade
+
+COPY api/package.json package.json
+COPY api/package-lock.json package-lock.json
+RUN npm ci --only=production
+
+COPY api/src ./src
+
+CMD ["npm", "start"]
