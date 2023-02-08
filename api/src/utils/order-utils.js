@@ -56,6 +56,7 @@ const OBJ_MAP = {
     structMembers: [
       { name: 'workerpool', type: 'address' },
       { name: 'workerpoolprice', type: 'uint256' },
+      { name: 'ipaddress', type: 'string' },
       { name: 'volume', type: 'uint256' },
       { name: 'tag', type: 'bytes32' },
       { name: 'category', type: 'uint256' },

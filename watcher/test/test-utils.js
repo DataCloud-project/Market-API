@@ -96,6 +96,7 @@ const deployAndGetWorkerpoolorder = async (
   {
     category = 0,
     workerpoolprice = 0,
+    ipaddress= "0.0.0.0",
     volume = 1,
     trust,
     apprestrict,
@@ -114,6 +115,7 @@ const deployAndGetWorkerpoolorder = async (
     .createWorkerpoolorder({
       workerpool,
       workerpoolprice,
+      ipaddress,
       volume,
       category,
       trust,
