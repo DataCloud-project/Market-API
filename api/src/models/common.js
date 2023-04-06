@@ -43,7 +43,7 @@ const Bytes32Schema = {
   required: true,
 };
 
-const IPAddressSchema = {
+const HardwareSchema = {
   type: String,
   required: true,
 };
@@ -119,7 +119,7 @@ module.exports = {
     PositiveStrictSafeUintSchema,
     TimestampSchema,
     AddressSchema,
-    IPAddressSchema,
+    HardwareSchema,
     Bytes32Schema,
     ChainIdSchema,
     OrderSignSchema,
