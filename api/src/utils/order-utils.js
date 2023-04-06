@@ -56,6 +56,7 @@ const OBJ_MAP = {
     structMembers: [
       { name: 'workerpool', type: 'address' },
       { name: 'workerpoolprice', type: 'uint256' },
+      { name: 'hardware', type: 'string' },
       { name: 'volume', type: 'uint256' },
       { name: 'tag', type: 'bytes32' },
       { name: 'category', type: 'uint256' },
@@ -79,6 +80,8 @@ const OBJ_MAP = {
       { name: 'datasetmaxprice', type: 'uint256' },
       { name: 'workerpool', type: 'address' },
       { name: 'workerpoolmaxprice', type: 'uint256' },
+      { name: 'taskmaxprice', type: 'uint256' },
+      { name: 'taskduration', type: 'uint256' },
       { name: 'requester', type: 'address' },
       { name: 'volume', type: 'uint256' },
       { name: 'tag', type: 'bytes32' },
