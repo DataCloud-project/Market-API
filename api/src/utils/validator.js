@@ -25,12 +25,6 @@ const timestampSchema = () =>
     '${path} must be a timestamp (2019-09-11T10:03:38.068Z is a valid timestamp)',
   );
   
-  const ipAddressSchema = () =>
-  string().match(
-    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/,
-    '${path} must be an IP address 127.0.0.1 is a valid IP Address)',
-  );
-
 const addressSchema = () =>
   string()
     .transform((value) => {
@@ -62,6 +56,8 @@ const signed = () => ({
   salt: bytes32Schema().required(),
   sign: orderSignSchema().required(),
 });
+
+const hardwareSchema = () => string();
 
 const paramsSchema = () => string();
 
@@ -107,7 +103,7 @@ const workerpoolorderSchema = () =>
     {
       workerpool: addressSchema().required(),
       workerpoolprice: positiveIntSchema().required(),
-      ipaddress: ipAddressSchema().required(),
+      hardware: hardwareSchema().required(),
       volume: positiveStrictIntSchema().required(),
       tag: bytes32Schema().required(),
       category: positiveIntSchema().required(),
@@ -134,6 +130,8 @@ const requestorderSchema = () =>
       datasetmaxprice: positiveIntSchema().required(),
       workerpool: addressSchema().required(),
       workerpoolmaxprice: positiveIntSchema().required(),
+      taskmaxprice: positiveIntSchema().required(),
+      taskduration: positiveIntSchema().required(),
       requester: addressSchema().required(),
       volume: positiveStrictIntSchema().required(),
       tag: bytes32Schema().required(),
