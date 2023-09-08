@@ -57,8 +57,6 @@ const signed = () => ({
   sign: orderSignSchema().required(),
 });
 
-const hardwareSchema = () => string();
-
 const paramsSchema = () => string();
 
 const apporderSchema = () =>
@@ -103,7 +101,7 @@ const workerpoolorderSchema = () =>
     {
       workerpool: addressSchema().required(),
       workerpoolprice: positiveIntSchema().required(),
-      hardware: hardwareSchema().required(),
+      taskmaxduration: positiveIntSchema().required(),
       volume: positiveStrictIntSchema().required(),
       tag: bytes32Schema().required(),
       category: positiveIntSchema().required(),
@@ -130,7 +128,6 @@ const requestorderSchema = () =>
       datasetmaxprice: positiveIntSchema().required(),
       workerpool: addressSchema().required(),
       workerpoolmaxprice: positiveIntSchema().required(),
-      taskmaxprice: positiveIntSchema().required(),
       taskduration: positiveIntSchema().required(),
       requester: addressSchema().required(),
       volume: positiveStrictIntSchema().required(),

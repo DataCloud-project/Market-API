@@ -3,7 +3,6 @@ const { getMongoose } = require('../loaders/mongoose');
 const { logger } = require('../utils/logger');
 const {
   AddressSchema,
-  HardwareSchema,
   Bytes32Schema,
   ChainIdSchema,
   SafeUintSchema,
@@ -24,7 +23,7 @@ const workerpoolorderSchema = new Schema(
     order: {
       workerpool: { ...AddressSchema, index: true },
       workerpoolprice: SafeUintSchema,
-      hardware: HardwareSchema,
+      taskmaxduration: SafeUintSchema,
       volume: SafeUintSchema,
       tag: Bytes32Schema,
       category: SafeUintSchema,
