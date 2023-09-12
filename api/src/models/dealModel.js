@@ -43,7 +43,6 @@ const dealSchema = new Schema(
     botFirst: SafeUintSchema,
     botSize: SafeUintSchema,
     duration: SafeUintSchema,
-    maxduration: SafeUintSchema,
     schedulerRewardRatio: SafeUintSchema,
     workerStake: SafeUintSchema,
     blockNumber: SafeUintSchema,

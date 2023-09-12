@@ -57,6 +57,8 @@ const signed = () => ({
   sign: orderSignSchema().required(),
 });
 
+const hardwareSchema = () => string();
+
 const paramsSchema = () => string();
 
 const apporderSchema = () =>
