@@ -1,7 +1,22 @@
-#### 0.1.0
+# CHANGELOG
 
-Initial release of the R-MARKET tool, which will be presented in "Deliverable D4.2: Blockchain-based decentralized marketplace v1 (Due on M22)". 
+## v5.3.1
 
-#### 1.0.0
+- use ethers implementation for EIP712 hash
+- fix prevent a user to consume a challenge generated for another user
 
-Finalised modified first version (v1) of the R-MARKET tool. Modification has been documented in "Deliverable D4.2: Blockchain-based decentralized marketplace v1".  
+## v5.3.0
+
+- added custom value for maximum orders per wallet with env `MAX_OPEN_ORDERS_PER_WALLET`
+- added custom value for server port with env `PORT`
+- dependencies update
+
+## v5.2.1
+
+- dependencies update
+
+## v5.2.0
+
+- added enterprise flavour with eRlc withelist checks
+
+## v5.1.0 initial release
