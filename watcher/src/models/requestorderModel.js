@@ -28,7 +28,7 @@ const requestorderSchema = new Schema(
       appmaxprice: SafeUintSchema,
       datasetmaxprice: SafeUintSchema,
       workerpoolmaxprice: SafeUintSchema,
-	    taskduration: SafeUintSchema,
+	  taskduration: SafeUintSchema,
       volume: SafeUintSchema,
       tag: Bytes32Schema,
       category: SafeUintSchema,
