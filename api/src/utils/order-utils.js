@@ -57,6 +57,7 @@ const OBJ_MAP = {
       { name: 'workerpool', type: 'address' },
       { name: 'workerpoolprice', type: 'uint256' },
       { name: 'taskmaxduration', type: 'uint256' },
+      { name: 'hardwaredescription', type: 'string' },
       { name: 'volume', type: 'uint256' },
       { name: 'tag', type: 'bytes32' },
       { name: 'category', type: 'uint256' },

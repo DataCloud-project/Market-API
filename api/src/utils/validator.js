@@ -101,7 +101,8 @@ const workerpoolorderSchema = () =>
     {
       workerpool: addressSchema().required(),
       workerpoolprice: positiveIntSchema().required(),
-      taskmaxduration: positiveIntSchema().required(),
+      taskmaxduration: string().required(),
+      hardwaredescription: paramsSchema().required(),
       volume: positiveStrictIntSchema().required(),
       tag: bytes32Schema().required(),
       category: positiveIntSchema().required(),
